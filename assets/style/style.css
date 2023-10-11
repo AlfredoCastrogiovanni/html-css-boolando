@@ -4,3 +4,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* General Classes */
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Header */
+header {
+    background-color: rgb(255, 105, 0);
+}
+
+header .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+header .header-wrapper nav {
+    width: 20%;
+}
+
+header .header-wrapper nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header .header-wrapper nav ul li {
+    margin-left: 0.75rem;
+    line-height: 2rem;
+    color: white;
+}
+
+header .header-wrapper .logo {
+    width: 60%;
+    text-align: center;
+}
+
+header .header-wrapper .logo img {
+    height: 2rem;
+}
+
+header .header-wrapper .user-buttons {
+    width: 20%;
+    color: white;
+    line-height: 2rem;
+}
+
+header .header-wrapper .user-buttons > * {
+    margin-left: 0.25rem;
+}
