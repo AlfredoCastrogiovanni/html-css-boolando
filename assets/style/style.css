@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Cabin', sans-serif;;
+}
+
 /* General Classes */
 .container {
     margin: 0 auto;
@@ -54,4 +58,80 @@ header .header-wrapper .user-buttons {
 
 header .header-wrapper .user-buttons > * {
     margin-left: 0.25rem;
+}
+
+/* Products */
+.products-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.products-wrapper .product {
+    width: calc(100% / 3 - 2rem);
+    margin: 2rem 1rem;
+}
+
+.products-wrapper .product .product-showcase {
+    position: relative;
+}
+
+.products-wrapper .product .product-showcase img {
+    width: 100%;
+}
+
+.products-wrapper .product .product-showcase .heart {
+    background-color: white;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.25rem 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.products-wrapper .product .product-showcase .sale {
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    bottom: 4rem;
+    left: 0;
+    height: 1.5rem;
+    width: 3rem;
+    color: white;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.75rem;
+}
+
+.products-wrapper .product .product-showcase .sustainability {
+    background-color: rgb(0, 128, 0);
+    position: absolute;
+    bottom: 4rem;
+    left: 3.5rem;
+    height: 1.5rem;
+    width: 6.5rem;
+    color: white;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.90rem;
+    font-weight: 700;
+}
+
+.products-wrapper .product .product-showcase .sustainability-no-sale {
+    left: 0rem;
+}
+
+.products-wrapper .product .product-info .product-name {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.products-wrapper .product .product-info .sale-price {
+    color: red;
+}
+
+.products-wrapper .product .product-info .price {
+    text-decoration: line-through;
 }
